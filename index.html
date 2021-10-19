@@ -24,7 +24,7 @@
     <section id="presentation">
         <div id="texteIntro">
             <h2>Le bon choix pour de meilleurs résultats physiques</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni animi quasi illum nihil facilis in laudantium deleniti. Esse dolores corporis voluptatum architecto aperiam nemo aliquam non perferendis? Laboriosam omnis minima repellat. Commodi minima reiciendis esse alias ea sapiente eveniet doloremque.</p>
+            <p>Notre équipe composé d'un nutritionniste du sport, d'un cuisiner, de trois livreurs et d'un chargé d'assistance client travaillent d'arrache pieds pour vous proposer le service le plus qualitatif, rapide et fiable à un prix record.</p>
         </div>
         <div id="prestations">
             <div class="imagesPrestations">
@@ -54,11 +54,11 @@
     </section> -->
     <footer>
         <h2 id="contact">Contactez-nous</h2>
-        <form>
-            <input id="nom" placeholder="Nom">
-            <input placeholder="E-mail">
-            <textarea placeholder="Votre message ici..."></textarea>
-            <button>Envoyer</button>
+        <form method="post" action="mail.php">
+            <input type="text" name="nom" placeholder="Nom" required> 
+            <input type="email" name="e-mail" placeholder="E-mail" required>
+            <textarea type="text" placeholder="Votre message ici..." rows="10" cols="30" name="message" required></textarea>
+            <button type="submit" name="formsend">Envoyer</button>
         </form>
         <div id="deuxiemeTrait"></div>
         <div id="copyrightEtIcons">
