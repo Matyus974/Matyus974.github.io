@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span.gray {
+    color: rgba(236, 240, 241, 0.5);
+}
+
+span.italic {
+    font-style: italic;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+span.bleu {
+    color: rgb(3, 75, 143);
+}
+
+/* ************ header ************ */
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(236, 240, 241);
+    text-decoration: none;
+}
+
+header {
+    background-color: rgba(36, 37, 42, 1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0;
+    padding: 15px 35px;
+}
+
+.logo {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a:hover, a.cta:hover {
+    color: rgb(3, 75, 143);
+}
+
+/* ************ presentation ************ */
+
+#imagePrincipale {
+    /* padding-right: 40px; */
+    padding-top: 60px;
+    background: url(/images/muscle.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+
+h1 {
+    color: rgb(236, 240, 241);
+    font-size: 5em;
+    margin-top: 90px;
+    text-shadow: 3px 2px 1px gray;
+}
+
+#premierTrait {
+    height: 2px;
+    width: 35%;
+    background-color: rgb(236, 240, 241);
+    margin: 50px auto;
+}
+
+h3 {
+    /* padding-top: 0px; */
+    color: rgb(236, 240, 241);
+    font-size: 2em;
+}
+
+/* ************ reservations ************ */
+
+#reservations {
+    background-color: rgba(36, 37, 42, 0.8);
+    color: rgb(236, 240, 241);
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.reservations {
+    color: #373737;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    margin: 30px 20px;
+    height: 50vh;
+}
+
+#reservations .overlay {
+    margin-top: 30px;
+    /* background-color: red; */
+}
+
+.petit-dejeuner { background: url(/images/petit-déjeuner.jpg); }
+.dejeuner { background: url(/images/déjeuner.jpg); }
+
+/* ************ faq ************ */
+
+#faq {
+    background-color: rgba(36, 37, 42, 1);
+    color: rgb(236, 240, 241);
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+#faq .overlay {
+    margin-top: 30px;
+    /* background-color: red; */
+}
+
+.faq .question {
+    font-size: 1.6em;
+}
+
+#faq .response {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

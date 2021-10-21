@@ -1,76 +1,67 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Nutrigym</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li id="logo"><a href="#">Nutrigym</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#prestations">Prestations</a></li>
-            </ul>
-        </nav>
-        <div id="imagePrincipale">
-            <h1>Nutrigym</h1>
-            <div id="premierTrait"></div>
-            <h3>Préparation & Livraison de repas équilibrés pour sportif</h3>
-        </div>
-    </header>
-    <section id="presentation">
-        <div id="texteIntro">
-            <h2>Le bon choix pour de meilleurs résultats physiques</h2>
-            <p>Notre équipe composé d'un nutritionniste du sport, d'un cuisiner, de trois livreurs et d'un chargé d'assistance client travaillent d'arrache pieds pour vous proposer le service le plus qualitatif, rapide et fiable à un prix record.</p>
-        </div>
-        <div id="prestations">
-            <div class="imagesPrestations">
-                <h4>Petit-déjeuner</h4>
-                <a href="#"><img src="/img/petit-déjeuner.jpg" alt="petit-déjeuner"></a>
+<html>
+    <head>
+        <title>Navbar</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="#"><span class="gray italic">N</span>utrigym 🍽️</a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#reservations">Réservations</a></li>
+                    <li><a href="#faq">Foire aux questions</a></li>
+                    <li><a href="#staff">Notre équipe</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#contact">Contact</a>
+        </header>
+        <section id="presentation">
+            <div id="imagePrincipale">
+                <h1><span class="gray italic">N</span>utrigym</h1>
+                <div id="premierTrait"></div>
+            <h3>Vos repas <span class="underline">diététique</span> préparés <span class="gray italic">et</span> livrés en quelques clics avec <span class="bleu">l'Orange Bleue</span></h3>
             </div>
-            <div class="imagesPrestations">
-                <h4>Déjeuner</h4>
-                <a href="#"><img src="/img/déjeuner.jpg" alt="déjeuner"></a>
-            </div>
-            <div class="imagesPrestations">
-                <h4>Dîner</h4>
-                <a href="#"><img src="/img/dîner.jpg" alt="dîner"></a>
-            </div>
-            <div class="imagesPrestations">
-                <h4>Cheat meal</h4>
-                <a href="#"><img src="/img/cheat_meal.jpg" alt="cheat meal"></a>
-            </div>
-        </div>
-    </section>
-    <!-- <section id="equipe">
-        <h2>Notre équipe de passionnés</h2>
-        <ul>
-            <li><p>Directeur - MAYOT Noâ</p></li>
-            <li><p>Nutritionniste - MAYOT Noâ</p></li>
-        </ul>
-    </section> -->
-    <footer>
-        <h2 id="contact">Contactez-nous</h2>
-        <form method="post" action="mail.php">
-            <input type="text" name="nom" placeholder="Nom" required> 
-            <input type="email" name="e-mail" placeholder="E-mail" required>
-            <textarea type="text" placeholder="Votre message ici..." rows="10" cols="30" name="message" required></textarea>
-            <button type="submit" name="formsend">Envoyer</button>
-        </form>
-        <div id="deuxiemeTrait"></div>
-        <div id="copyrightEtIcons">
-            <div id="copyright">
-                <span>© Nutrigym. 2021</span>
-            </div>
-            <div id="icons">
-                <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
-                <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
-                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
+        </section>
+        <section id="reservations">
+            <section class="reservations petit-dejeuner">
+                <section class="overlay">
+                    <span class="repas">Petit-déjeuner</span>
+                    <span class="prix">Indéfini</span>
+                </section>
+            </section>
+            <section class="reservations dejeuner">
+                <section class="overlay">
+                    <span class="repas">Déjeuner</span>
+                    <span class="prix">Indéfini</span>
+                </section>
+            </section>
+        </section>
+        <section id="faq">
+            <section class="faq global">
+                <section class="overlay">
+                    <h4 class="question">Qu'est-ce que Nutrigym ?</h4>
+                    <p class="response"><span class="gray italic">N</span>utrigym est une entreprise partenaire de <span class="bleu">l'Orange Bleue</span> qui a pour mission de préparer puis livrer des repas diététiques à la salle de sport de ses clients pour leur permettre sans perte de temps de manger sainement tout en prenant du plaisir.</p>
+                </section>
+            </section>
+            <section class="faq price">
+                <section class="overlay">
+                    <h4 class="question">Combien coûte un repas ?</h4>
+                    <p class="response">Nous n'avons à présent pas encore défini les prix de chaque repas néanmoins, veuillez prendre en compte que ceux-ci varieront selon les allergies et régimes alimentaires propres à chacun.</p>
+                </section>
+            </section>
+            <section class="faq subscribe">
+                <section class="overlay">
+                    <h4 class="question">Un abonnement mensuel ou annuel ?</h4>
+                    <p class="response">Le sujet de l'abonnement n'a pas encore été évoqué cependant, notre équipe se penchera au plus vite sur celui-ci afin de convenir à tous et toutes.</p>
+                </section>
+            </section>
+            <section class="faq delivery">
+                <section class="overlay">
+                    <h4 class="question">Horaires de livraison</h4>
+                    <p class="response">Les repas sont déposés dans des sacs isothermes (de manière à garder les plats chauds) à l'accueil de votre salle de sport <span class="bleu">l'Orange Bleue</span> tout les jours à 9h30 et 13h.</p>
+                </section>
+            </section>
+        </section>
+    </body>
 </html>
